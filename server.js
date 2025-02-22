@@ -6,7 +6,7 @@ const connectDB = require('./config/db');
 const authoRoutes = require("./routes/authRoutes")
 const courseRoutes = require("./routes/courseRoutes")
 const examRoutes = require('./routes/examRoutes');
-const certificateRoutes = require('./routes/certificateRoutes');
+// const certificateRoutes = require('./routes/certificateRoutes');
 
 connectDB();
 
@@ -18,7 +18,7 @@ app.use(express.json());
 app.use('/api/auth', authoRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/exams', examRoutes);
-app.use('/api/certificate', certificateRoutes);
+// app.use('/api/certificate', certificateRoutes);
 
 const PORT = process.env.PORT || 5000;
 
